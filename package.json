@@ -1,0 +1,55 @@
+{
+  "name": "aave-test",
+  "version": "0.1.0",
+  "main": "./src/index.ts",
+  "bin": {
+    "aave-test": "./bin/main.js"
+  },
+  "files": [
+    "bin",
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "build:watch": "tsc -w",
+    "test": "jest",
+    "lint": "eslint -c .eslintrc.js --max-warnings=0 'src/**/*.{ts,tsx,js,jsx}'",
+    "lint:fix": "npm run lint -- --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vic08/aave-test.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vic08/aave-test/issues"
+  },
+  "homepage": "https://github.com/vic08/aave-test#readme",
+  "dependencies": {
+    "ajv": "^8.11.0",
+    "cli-table": "^0.3.11",
+    "commander": "^9.4.1",
+    "stream-chain": "^2.2.5",
+    "stream-json": "^1.7.4"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.19.3",
+    "@babel/preset-typescript": "^7.18.6",
+    "@types/ajv": "^1.0.0",
+    "@types/cli-table": "^0.3.1",
+    "@types/commander": "^2.12.2",
+    "@types/jest": "^29.1.1",
+    "@types/node": "^18.7.23",
+    "@types/stream-chain": "^2.0.1",
+    "@types/stream-json": "^1.7.2",
+    "@typescript-eslint/eslint-plugin": "^5.38.1",
+    "@typescript-eslint/parser": "^5.38.1",
+    "babel-jest": "^29.1.2",
+    "eslint": "^8.24.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "jest": "^29.1.2",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.8.4"
+  }
+}
